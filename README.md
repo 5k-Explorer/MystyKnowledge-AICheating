@@ -1,7 +1,7 @@
 #  Mysty AI
 
-Mysty is a locally hosted Discord + Web AI assistant built for speed, sarcasm, and customizability.  
-It runs on your machine but can be shared securely with friends using tunneling services.
+Mysty is a locally hosted Discord + Web AI assistant built for speed and intelligence.  
+It runs on your machine but can be shared with friends using tunneling services, alternatively on the Mysty Tools Discord we give daily links with no self-hosting needed.
 
 ---
 
