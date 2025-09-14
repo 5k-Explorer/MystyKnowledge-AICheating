@@ -1,23 +1,20 @@
-# 🌸 Mysty AI
+#  Mysty AI
 
 Mysty is a locally hosted Discord + Web AI assistant built for speed, sarcasm, and customizability.  
 It runs on your machine but can be shared securely with friends using tunneling services.
 
 ---
 
-## ✨ Features
+##  Features
 
-- 🎤 Voice-controlled AI assistant  
-- 🤖 Discord bot integration  
-- 💾 Persistent memory with SQLite  
-- 🎙️ TTS output (local, not in VC)  
-- 🎨 Sarcastic + witty personality (no generic fallback replies)  
-- 🚀 Lightweight + fast response times  
-- 🔒 Private hosting with ngrok (share with friends without exposing your IP)  
+-  Discord bot integration  
+-  Daily Links to prevent blocks
+-  Lightweight + fast response times  
+-  Private hosting with ngrok (share with friends without exposing your IP)  
 
 ---
 
-## 🚀 Deployment
+##  Deployment
 
 > [!IMPORTANT]  
 > Mysty is designed to run **locally on your own hardware**.  
@@ -45,27 +42,18 @@ For lighter loads (1–3 users), a balanced CPU/GPU split is fine.
 
 Expected latency with 3–5 users:
 
-⏱️ ~1.2s per response (GPU mode)
+ ~1.2s per response (GPU mode)
 
-⏱️ ~2–2.5s per response (CPU-balanced mode)
-
-🛠️ Configuration
-Memory → Stored in data/memory.sqlite
-
-Commands → Organized under mystymanager/ (admin + text commands)
-
-Events → In mystymanager/events/
-
-You can customize Mysty’s personality, voice settings, and bot behavior inside config.py.
+ ~2–2.5s per response (CPU-balanced mode)
 
 🌐 Deployment Alternatives
 If you don’t want to host locally, you can explore:
 
-🔹 Render (web app hosting)
+🔹 Render
 
-🔹 Koyeb (cloud container hosting)
+🔹 Koyeb
 
-🔹 GitHub Codespaces (browser-hosted dev environment)
+🔹 Replit
 
 [!WARNING]
 Free hosts like Netlify, Cloudflare Pages, or GitHub Pages will not work since Mysty requires a Python backend and GPU access.
@@ -91,7 +79,7 @@ If you run into issues:
 
 Open a GitHub issue with details
 
-Or join the Mysty Discord server (coming soon)
+Or join the Mysty Discord server (https://discord.gg/HEj4kB5VRS)
 
 📜 License
 This project is proprietary.
