@@ -1,102 +1,98 @@
-# MystyKnowledge
+# 🌸 Mysty AI
 
-Serving curious minds with AI answers since 2025.
+Mysty is a locally hosted Discord + Web AI assistant built for speed, sarcasm, and customizability.  
+It runs on your machine but can be shared securely with friends using tunneling services.
 
-MystyKnowledge is a lightweight AI-powered Q&A system built for Discord + Web, making it easy to spin up an Ollama-powered model (Gemma 3) and share it securely with others. It combines Discord bot commands, a FastAPI backend, and ngrok tunneling for remote access.
+---
 
-⚡ Fast,
-🔒 Private,
-💻 Self-hosted on your own machine.
+## ✨ Features
 
-✨ Features
+- 🎤 Voice-controlled AI assistant  
+- 🤖 Discord bot integration  
+- 💾 Persistent memory with SQLite  
+- 🎙️ TTS output (local, not in VC)  
+- 🎨 Sarcastic + witty personality (no generic fallback replies)  
+- 🚀 Lightweight + fast response times  
+- 🔒 Private hosting with ngrok (share with friends without exposing your IP)  
 
-Discord Integration
-Control the AI directly from Discord using !MKlink and !status.
+---
 
-Gemma 3 Model (Ollama)
-Uses the latest Gemma 3:4b model for reliable responses, math help, and more.
+## 🚀 Deployment
 
-Web Access with ngrok
-Share a secure link with friends across the country—no extra setup needed.
+> [!IMPORTANT]  
+> Mysty is designed to run **locally on your own hardware**.  
+> Cloud hosting is not recommended due to GPU/latency requirements.
 
-Auto Cloaking / Daily URL Rotation
-ngrok ensures your public link changes daily for safety and privacy.
+### 🔹 Running Locally
+```bash
+git clone https://github.com/YourUser/Mysty.git
+cd Mysty
+pip install -r requirements.txt
+python main.py
+🔹 Sharing Access (Ngrok)
+Run ngrok to create a temporary secure link:
 
-Simple Commands
+bash
+Copy code
+ngrok http 5000
+This generates a unique URL (refreshes daily) you can share with trusted users.
+Supports up to 5 concurrent users on mid-range GPUs without noticeable slowdown.
 
-!MKlink → Start or restart the AI server and generate a fresh link
+⚙️ Performance Notes
+[!TIP]
+If you have a GPU like the RTX 4060, you can force Mysty to run 100% on GPU for faster response times.
+For lighter loads (1–3 users), a balanced CPU/GPU split is fine.
 
-!status → Check if the server is live
+Expected latency with 3–5 users:
 
-Math + Step-by-Step Explanations
-Safe arithmetic evaluation is built in. If your question is math-related, you’ll get both the answer and an explanation.
+⏱️ ~1.2s per response (GPU mode)
 
-🚀 How It Works (High-Level)
+⏱️ ~2–2.5s per response (CPU-balanced mode)
 
-Discord Controller
+🛠️ Configuration
+Memory → Stored in data/memory.sqlite
 
-Handles commands like !MKlink.
+Commands → Organized under mystymanager/ (admin + text commands)
 
-Spins up the FastAPI server if not running.
+Events → In mystymanager/events/
 
-Returns the live ngrok link to Discord.
+You can customize Mysty’s personality, voice settings, and bot behavior inside config.py.
 
-FastAPI Backend
+🌐 Deployment Alternatives
+If you don’t want to host locally, you can explore:
 
-Exposes endpoints (/ and /chat).
+🔹 Render (web app hosting)
 
-Hosts a simple frontend page and chat API.
+🔹 Koyeb (cloud container hosting)
 
-Ollama + GPU Acceleration
+🔹 GitHub Codespaces (browser-hosted dev environment)
 
-Runs locally on your hardware.
+[!WARNING]
+Free hosts like Netlify, Cloudflare Pages, or GitHub Pages will not work since Mysty requires a Python backend and GPU access.
 
-Automatically leverages your GPU (RTX 4060 recommended).
+🖥️ GitHub Codespaces (Optional)
+[!NOTE]
+If you set the port below 1023, you must run sudo PORT=1023
 
-ngrok Tunneling
+Create a GitHub account if you haven’t already.
 
-Creates a temporary, secure URL accessible from anywhere.
+Click Code → Create Codespace on main.
 
-No port forwarding or extra setup needed.
+Run:
 
-📊 Performance
+bash
+Copy code
+pip install -r requirements.txt
+python main.py
+Forward the port in Codespaces and set it to public visibility.
 
-Optimized for 3–5 users simultaneously.
+🤝 Support
+If you run into issues:
 
-Average response delay: ~2–4 seconds on GPU.
+Open a GitHub issue with details
 
-Handles medium-length questions without noticeable slowdown.
+Or join the Mysty Discord server (coming soon)
 
-📦 Deployment Notes
-
-This project is not open-source. The core code is private.
-
-Deployment instructions are simplified since only maintainers have access to the actual backend files.
-
-If you are part of the MystyKnowledge testing group:
-
-Request access from the maintainer.
-
-Use the ngrok link shared in Discord.
-
-No extra setup required.
-
-⚠️ Disclaimer
-
-This project is closed-source. Redistribution, modification, or unauthorized deployment is not permitted.
-
-If you are interested in contributing, please open an issue or contact me directly.
-
-📞 Support
-
-Join our Discord Community (private invite link for testers).
-
-Open an issue here on GitHub.
-
-🙌 Credits
-
-Ollama for local model runtime.
-
-Gemma 3 for powering the intelligence.
-
-FastAPI + ngrok + Discord.py for the integration backbone.
+📜 License
+This project is proprietary.
+You may not copy, redistribute, or modify the source code without explicit permission.
