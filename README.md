@@ -24,7 +24,7 @@ Alternatively, daily links are provided in the Mysty Tools Discord, so no setup 
 ### 🔹 Running Locally
 1. Download the latest release from the [Releases page](https://github.com/5k-Explorer/MystyKnowledge-AICheating/releases).  
    - Windows: extract the `.zip` and run `app.exe` after filling out `config.json`.
-   - No other OS with directly guaranteed support
+   - No other OS with direct guaranteed support
 
 2. Mysty will install dependencies and start automatically.  
 
