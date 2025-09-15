@@ -1,39 +1,37 @@
-#  Mysty AI
+# Mysty AI
 
 Mysty is a locally hosted Discord + Web AI assistant built for speed and intelligence.  
-It runs on your machine but can be shared with friends using tunneling services, alternatively on the Mysty Tools Discord we give daily links with no self-hosting needed.
+It runs on your machine but can be shared with friends using tunneling services.  
+Alternatively, daily links are provided in the Mysty Tools Discord, so no setup is required.
 
 ---
 
-##  Features
+## Features
 
--  Discord bot integration  
--  Daily Links to prevent blocks
--  Lightweight + fast response times  
--  Private hosting with ngrok (share with friends without exposing your IP)  
+- Discord bot integration  
+- Daily links to prevent blocks  
+- Lightweight + fast response times  
+- Private hosting with ngrok (share with friends without exposing your IP)  
 
 ---
 
-##  Deployment
+## Deployment
 
 > [!IMPORTANT]  
 > Mysty is designed to run **locally on your own hardware**.  
 > Cloud hosting is not recommended due to GPU/latency requirements.
 
 ### 🔹 Running Locally
-```bash
-git clone https://github.com/YourUser/Mysty.git
-cd Mysty
-pip install -r requirements.txt
-python main.py
-🔹 Sharing Access (Ngrok)
-Run ngrok to create a temporary secure link:
+1. Download the latest release from the [Releases page](https://github.com/5k-Explorer/MystyKnowledge-AICheating/releases).  
+   - Windows: extract the `.zip` and run `mysty.exe`  
+   - Linux/Mac: run `./mysty` from terminal  
 
-bash
-Copy code
-ngrok http 5000
-This generates a unique URL (refreshes daily) you can share with trusted users.
-Supports up to 5 concurrent users on mid-range GPUs without noticeable slowdown.
+2. Mysty will install dependencies and start automatically.  
+
+3. To share access, run ngrok:
+   ```bash
+   ngrok http 5000
+This generates a unique daily link you can share with trusted users.
 
 ⚙️ Performance Notes
 [!TIP]
@@ -42,44 +40,38 @@ For lighter loads (1–3 users), a balanced CPU/GPU split is fine.
 
 Expected latency with 3–5 users:
 
- ~1.2s per response (GPU mode)
+~1.2s per response (GPU mode)
 
- ~2–2.5s per response (CPU-balanced mode)
+~2–2.5s per response (CPU-balanced mode)
 
 🌐 Deployment Alternatives
 If you don’t want to host locally, you can explore:
 
-🔹 Render
+Render
 
-🔹 Koyeb
+Koyeb
 
-🔹 Replit
+Replit
 
 [!WARNING]
 Free hosts like Netlify, Cloudflare Pages, or GitHub Pages will not work since Mysty requires a Python backend and GPU access.
 
 🖥️ GitHub Codespaces (Optional)
 [!NOTE]
-If you set the port below 1023, you must run sudo PORT=1023
+If you set the port below 1023, you must run sudo PORT=1023.
 
-Create a GitHub account if you haven’t already.
+Open the repo in GitHub Codespaces.
 
-Click Code → Create Codespace on main.
+Forward the port and set visibility to public.
 
-Run:
-
-bash
-Copy code
-pip install -r requirements.txt
-python main.py
-Forward the port in Codespaces and set it to public visibility.
+Access Mysty through the forwarded link.
 
 🤝 Support
 If you run into issues:
 
 Open a GitHub issue with details
 
-Or join the Mysty Discord server (https://discord.gg/HEj4kB5VRS)
+Or join the Mysty Discord server: https://discord.gg/HEj4kB5VRS
 
 📜 License
 This project is proprietary.
