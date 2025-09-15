@@ -1,4 +1,4 @@
-# Mysty AI
+# Mysty Knowledge AI
 
 Mysty is a locally hosted Discord + Web AI assistant built for speed and intelligence.  
 It runs on your machine but can be shared with friends using tunneling services.  
