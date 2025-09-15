@@ -28,7 +28,7 @@ Alternatively, daily links are provided in the Mysty Tools Discord, so no setup 
 
 2. Mysty will install dependencies and start automatically.  
 
-3. To share access, use the Ngronk URL provided when you run the app build.
+3. To share access, use the Ngronk URL provided when you run the app build's `MKlink` command in Discord.
    - This generates a unique daily link you can share with trusted users.
 
 > [!NOTE]  
