@@ -19,7 +19,7 @@ Alternatively, daily links are provided in the Mysty Tools Discord, so no setup 
 
 > [!IMPORTANT]  
 > Mysty is designed to run **locally on your own hardware**.  
-> Cloud hosting is not recommended due to GPU/latency requirements.
+> Cloud hosting is not recommended due to GPU/latency requirements and hosting the AI.
 
 ### 🔹 Running Locally
 1. Download the latest release from the [Releases page](https://github.com/5k-Explorer/MystyKnowledge-AICheating/releases).  
