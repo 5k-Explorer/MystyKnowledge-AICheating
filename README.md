@@ -28,21 +28,17 @@ Alternatively, daily links are provided in the Mysty Tools Discord, so no setup 
 
 2. Mysty will install dependencies and start automatically.  
 
-3. To share access, run ngrok:
-   ```bash
-   ngrok http 5000
-This generates a unique daily link you can share with trusted users.
+3. To share access, use the Ngronk URL provided when you run the app build.
+   - This generates a unique daily link you can share with trusted users.
 
 ⚙️ Performance Notes
-[!TIP]
-If you have a GPU like the RTX 4060, you can force Mysty to run 100% on GPU for faster response times.
-For lighter loads (1–3 users), a balanced CPU/GPU split is fine.
-
 Expected latency with 3–5 users:
 
 ~1.2s per response (GPU mode)
 
 ~2–2.5s per response (CPU-balanced mode)
+
+Note that these Performance notes where taken on a high end GPU.
 
 🌐 Deployment Alternatives
 If you don’t want to host locally, you can explore:
@@ -55,16 +51,6 @@ Replit
 
 [!WARNING]
 Free hosts like Netlify, Cloudflare Pages, or GitHub Pages will not work since Mysty requires a Python backend and GPU access.
-
-🖥️ GitHub Codespaces (Optional)
-[!NOTE]
-If you set the port below 1023, you must run sudo PORT=1023.
-
-Open the repo in GitHub Codespaces.
-
-Forward the port and set visibility to public.
-
-Access Mysty through the forwarded link.
 
 🤝 Support
 If you run into issues:
