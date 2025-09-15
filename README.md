@@ -33,7 +33,7 @@ Alternatively, daily links are provided in the Mysty Tools Discord, so no setup 
 
 > [!NOTE]  
 > In the Discord server, daily links are posted at 12AM every day.  
-> However, the links generally become active around 10AM or later (estimated).
+> However, the links generally become active around 8AM or later (estimated).
 
 ⚙️ Performance Notes
 Expected latency with 3–5 users:
