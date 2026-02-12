@@ -61,7 +61,6 @@ If you run into issues:
 
 Open a GitHub issue with details
 
-Or join the Mysty Discord server: https://discord.gg/HEj4kB5VRS
 
 📜 License
 This project is proprietary.
